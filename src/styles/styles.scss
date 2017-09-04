@@ -17,6 +17,18 @@ body {
   font-weight: 300;
 }
 
+ul {
+  padding: inherit;
+}
+
+ul > li {
+    display: inline-block;
+}
+
+.logo {
+  width: 50px;
+}
+
 td {
 	padding: 12px;
 }

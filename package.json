@@ -30,9 +30,12 @@
   "author": "Ryan DuShane",
   "license": "MIT",
   "dependencies": {
+    "font-awesome": "4.7.0",
     "object-assign": "4.1.0",
+    "rc-slider": "8.3.1",
     "react": "15.5.4",
     "react-dom": "15.5.4",
+    "react-fontawesome": "1.6.1",
     "react-redux": "5.0.5",
     "react-router": "3.0.5",
     "react-router-redux": "4.0.8",
@@ -98,8 +101,8 @@
   },
   "jest": {
     "moduleNameMapper": {
-    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tools/assetsTransformer.js",
-    "\\.(css|less)$": "<rootDir>/tools/assetsTransformer.js"
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tools/assetsTransformer.js",
+      "\\.(css|less)$": "<rootDir>/tools/assetsTransformer.js"
     }
   },
   "babel": {
@@ -126,7 +129,7 @@
                 "ie": 9,
                 "uglify": true
               }
-           }
+            }
           ]
         ],
         "plugins": [

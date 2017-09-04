@@ -14,5 +14,9 @@ export default {
       annual: 0,
       threeYear: 0
     }
+  },
+  home: {
+    forwardBackward: 0,
+    leftRight: 0
   }
 };
