@@ -16,7 +16,7 @@ export default {
     }
   },
   home: {
-    forwardBackward: 0,
-    leftRight: 0
+    forwardBackward: 50,
+    leftRight: 50
   }
 };
