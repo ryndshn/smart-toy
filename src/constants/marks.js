@@ -1,7 +1,7 @@
 export const forwardBackwardMarks = {
-  0: 'Forward',
+  0: 'Backward',
   50: 'Stop',
-  100: 'Backward',
+  100: 'Forward',
 };
 
 export const leftRightMarks = {

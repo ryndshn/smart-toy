@@ -53,6 +53,7 @@ class Home extends React.Component {
             </div>
           </li>
         </ul>
+        <img src="http://192.168.1.100:8081/" alt="Web Camera Feed" width="500" height="500" class="row" id="cameraFeed"/>
       </div>
     );
   }
