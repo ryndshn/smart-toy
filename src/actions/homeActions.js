@@ -7,7 +7,7 @@ export function sendForwardBackward(value) {
     // thunks allow for pre-processing actions, calling apis, and dispatching multiple actions
     // in this case at this point we could call a service that would persist the fuel savings
 
-    fetch('http://localhost:8000/forwardbackward', {
+    fetch('http://localhost:8000/forwardBackward', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -26,7 +26,7 @@ export function sendForwardBackward(value) {
 
 export function sendLeftRight(value) {
   return function(dispatch) {
-    fetch('http://localhost:8000/leftright', {
+    fetch('http://localhost:8000/leftRight', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
