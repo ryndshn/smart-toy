@@ -11,6 +11,8 @@ export const HomePage = (props) => {
       sendForwardBackward={props.actions.sendForwardBackward}
       sendLeftRight={props.actions.sendLeftRight}
       sendStart={props.actions.sendStart}
+      sendStop={props.actions.sendStop}
+      sendPlay={props.actions.sendPlay}
       home={props.home}
     />
   );

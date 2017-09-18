@@ -9,3 +9,5 @@ export const leftRightMarks = {
   50: 'Straight',
   100: 'Right',
 };
+
+export const defaultValue = 50;

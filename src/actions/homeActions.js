@@ -51,9 +51,39 @@ export function sendStart() {
         'Accept': 'application/json'
       }
     });
-    console.log("SEND_START" + value);
+    console.log("SEND_START");
     return dispatch( {
       type: types.SEND_START
+    });
+  };
+}
+
+export function sendStop() {
+  return function(dispatch) {
+    fetch('http://localhost:8000/start', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+    console.log("SEND_START");
+    return dispatch( {
+      type: types.SEND_STOP
+    });
+  };
+}
+
+export function sendPlay() {
+  return function(dispatch) {
+    fetch('http://localhost:8000/start', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+    console.log("SEND_PLAY");
+    return dispatch( {
+      type: types.SEND_PLAY
     });
   };
 }

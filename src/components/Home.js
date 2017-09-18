@@ -30,6 +30,17 @@ class Home extends React.Component {
       <div>
         <ul>
           <li>
+            <button onClick={() => this.props.sendStart()}>Start</button>
+          </li>
+          <li>
+            <button onClick={() => this.props.sendStop()}>Stop</button>
+          </li>
+          <li>
+            <button onClick={() => this.props.sendPlay()}>Play</button>
+          </li>
+        </ul>
+        <ul>
+          <li>
             <div className="slider">
               <Slider
                 value={this.props.home.forwardBackward}
@@ -51,17 +62,6 @@ class Home extends React.Component {
                 step={20}
               />
             </div>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <button type="button" onClick={this.props.home.start}>Start</button>
-          </li>
-          <li>
-            <button type="button">Stop</button>
-          </li>
-          <li>
-            <button type="button">Play</button>
           </li>
         </ul>
         <img src="http://192.168.1.100:8081/" className= "livefeed" alt="Web Camera Feed" id="cameraFeed"/>
