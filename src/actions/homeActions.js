@@ -10,7 +10,7 @@ export function sendForwardBackward(value) {
     fetch('http://localhost:8000/forwardBackward', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Accept': 'application/json'
       },
       body: JSON.stringify({
         value: value
@@ -29,7 +29,7 @@ export function sendLeftRight(value) {
     fetch('http://localhost:8000/leftRight', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Accept': 'application/json'
       },
       body: JSON.stringify({
         value: value
@@ -39,6 +39,21 @@ export function sendLeftRight(value) {
     return dispatch( {
       type: types.SEND_LEFT_RIGHT,
       value
+    });
+  };
+}
+
+export function sendStart() {
+  return function(dispatch) {
+    fetch('http://localhost:8000/start', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+    console.log("SEND_START" + value);
+    return dispatch( {
+      type: types.SEND_START
     });
   };
 }

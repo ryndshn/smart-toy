@@ -53,7 +53,18 @@ class Home extends React.Component {
             </div>
           </li>
         </ul>
-        <img src="http://192.168.1.100:8081/" alt="Web Camera Feed" width="500" height="500" class="row" id="cameraFeed"/>
+        <ul>
+          <li>
+            <button type="button" onClick={this.props.home.start}>Start</button>
+          </li>
+          <li>
+            <button type="button">Stop</button>
+          </li>
+          <li>
+            <button type="button">Play</button>
+          </li>
+        </ul>
+        <img src="http://192.168.1.100:8081/" className= "livefeed" alt="Web Camera Feed" id="cameraFeed"/>
       </div>
     );
   }
