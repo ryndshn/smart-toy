@@ -60,13 +60,13 @@ export function sendStart() {
 
 export function sendStop() {
   return function(dispatch) {
-    fetch('http://localhost:8000/start', {
+    fetch('http://localhost:8000/stop', {
       method: 'POST',
       headers: {
         'Accept': 'application/json'
       }
     });
-    console.log("SEND_START");
+    console.log("SEND_STOP");
     return dispatch( {
       type: types.SEND_STOP
     });
@@ -75,7 +75,7 @@ export function sendStop() {
 
 export function sendPlay() {
   return function(dispatch) {
-    fetch('http://localhost:8000/start', {
+    fetch('http://localhost:8000/play', {
       method: 'POST',
       headers: {
         'Accept': 'application/json'
