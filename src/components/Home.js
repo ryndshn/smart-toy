@@ -49,14 +49,14 @@ class Home extends React.Component {
         break;
       }
       case 'd': {
-        if((this.props.home.leftRight + 10) <= 100) {
-          this.onLeftRightSliderChange(this.props.home.leftRight + 10);
+        if((this.props.home.leftRight + 50) <= 100) {
+          this.onLeftRightSliderChange(this.props.home.leftRight + 50);
         }
         break;
       }
       case 'a': {
-        if((this.props.home.leftRight - 10) >= 0) {
-          this.onLeftRightSliderChange(this.props.home.leftRight - 10);
+        if((this.props.home.leftRight - 50) >= 0) {
+          this.onLeftRightSliderChange(this.props.home.leftRight - 50);
         }
         break;
       }
@@ -97,7 +97,7 @@ class Home extends React.Component {
                 onChange={this.onLeftRightSliderChange}
                 onAfterChange={this.onAfterChange}
                 marks={leftRightMarks}
-                step={10}
+                step={50}
               />
             </div>
           </li>
